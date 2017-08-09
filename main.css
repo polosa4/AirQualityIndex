@@ -1,0 +1,94 @@
+.customShow {
+    border: 0.5px solid white;
+    padding-top: 15%;
+    padding-bottom: 12%;
+    color: white;
+}
+.text-custom {
+    margin-top: 150px;
+    color: white;
+    background-color: #313131;
+    width: 400px!important;
+   
+}
+#custom {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+    
+.customShow p {
+    font-size: 1.5em;
+    font-weight: 300;
+    
+}
+
+.customShow p + p {
+    font-size: 3em;
+    font-weight: 600;
+}
+.good {
+    background-color: #009966;
+    
+}
+.moderate{
+    background-color: #FFDE33;
+    color: black;
+    
+}
+.unhealthy{
+    background-color: #FF9933;
+    color: white;
+}
+.very-unhealthy {
+    background-color: #CC0033;
+}
+.hazardous {
+    background-color: #7E0023;
+}
+.good p + p::after {
+    content:'Good';
+    display: block;
+    font-size: 0.5em;
+    font-weight: 200;
+}
+.moderate p + p::after {
+    content:'Moderate';
+    display: block;
+    font-size: 0.5em;
+    font-weight: 200;
+    
+}
+.unhealthy p + p::after {
+    content:'Unhealthy';
+    display: block;
+    font-size: 0.5em;
+    font-weight: 200;
+}
+.very-unhealthy p + p::after {
+    content:'Unhealthy';
+    display: block;
+    font-size: 0.5em;
+    font-weight: 200;
+}
+.hazardous p + p::after {
+    content:'Hazardous';
+    display: block;
+    font-size: 0.5em;
+    font-weight: 200;
+}
+.no-data p + p::after {
+    content: 'No Data'; 
+    display: block;
+    font-size: 0.5em;
+    font-weight: 200;
+}
+.no-data {
+    background-color: dimgrey;
+}
+.text-top {
+    margin-top:100px!important;
+}
+.text-top div::before {
+    content:'City Name';
+    
+}

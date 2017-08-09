@@ -1,0 +1,28 @@
+<div ng-controller="searchController">
+    <div class="container">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for..." ng-model='foundCity'>
+            <span class="input-group-btn">
+        <button ng-click="getCity()" class="btn btn-default">Go!</button>
+      </span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-4 text-center">
+                <div class="customShow" ng-class="{'good': newData.data.aqi < 50,
+                                                   'moderate': newData.data.aqi > 50,
+                                                   'unhealthy': newData.data.aqi > 100,
+                                                   'very-unhealthy': newData.data.aqi > 150,
+                                                   'hazardous': newData.data.aqi > 300,
+                                                   'no-data': newData.data.aqi == '-',
+                                                   'text-top': true
+                                                   }">
+                    <p>{{newData.data.city.name}}</p>
+                    <p>{{newData.data.aqi}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
